@@ -95,7 +95,7 @@ const setStatusAsAuthor = (people) => {
   people.forEach(index =>{
     index.isAuthor = true;
   })
-  
+
 
   // Solution code here...
 };
@@ -113,10 +113,27 @@ const a = [1, 2]; NOTE: If you assign an array to a `const`, you can't re-assign
 const b = [3, 4];
 append(a, b);
 console.log(a) prints [1, 2, 3, 4]
+
+EXPECTATION:
+describe('Testing challenge 5', () => {
+  test('It should append the second array to the first', () => {
+    const a = [1, 2, 3, 4];
+    const b = [5, 6, 7, 8];
+    append(a, b);
+
+    expect(a).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+  });
+});
+
+Notes: tried to use concat but that results in a new array. This challenge is asking for a modification of the original. "arr1 = arr1.concat(arr2);"
+
+ended up finding help via "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
 ------------------------------------------------------------------------------------------------ */
 
 const append = (arr1, arr2) => {
   // Solution code here...
+  // arr1 = arr1.concat(arr2);
+  Array.prototype.push.apply(arr1, arr2);
 
 };
 
