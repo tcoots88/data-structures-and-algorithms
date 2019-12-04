@@ -54,9 +54,15 @@ For example:
 const octavia = { fullName: 'Octavia Estelle Butler' };
 addBirthYearProperty(octavia, 1947);
 console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
+
+const a = { fullName: 'Octavia Butler' };
+    addBirthYearProperty(a, 1947);
+
+    expect(a.yearBorn).toStrictEqual(1947);
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
+  obj.yearBorn = year;
   // Solution code here...
 };
 
