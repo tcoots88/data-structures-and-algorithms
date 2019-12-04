@@ -77,9 +77,26 @@ For example:
 const people = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }];
 setStatusAsAuthor(people);
 console.log(people[1].isAuthor) prints true
+
+EXPECTATION:
+describe('Testing challenge 4', () => {
+  test('It should add a property to every object in an array', () => {
+    const a = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }, { fullName: 'Kurt Vonnegut' }];
+    setStatusAsAuthor(a);
+
+    expect(a[0].isAuthor).toStrictEqual(true);
+    expect(a[1].isAuthor).toStrictEqual(true);
+    expect(a[2].isAuthor).toStrictEqual(true);
+  });
+});
 ------------------------------------------------------------------------------------------------ */
 
 const setStatusAsAuthor = (people) => {
+  people.forEach(index =>{
+    index.isAuthor = true;
+  })
+  
+
   // Solution code here...
 };
 
