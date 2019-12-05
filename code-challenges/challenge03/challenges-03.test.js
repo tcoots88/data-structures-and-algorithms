@@ -1,5 +1,5 @@
 'use strict';
-// EXAMPLE: 
+// EXAMPLE:
 // const people = [
 //   {name: 'gandalf', age: 9000},
 //   {name: 'superman', age: 3},
@@ -92,17 +92,17 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 
 const alphabetizeBetter = (arr) => {
   function callback(a,b){
-    if(a.toLowerCase > b.toLowerCase){
-      return 1;
-    } else if(b.toLowerCase > a.toLowerCase) {
-      return -1;
-    } else {
-      return 0;
-    }
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
   }
+
   return arr.sort(callback);
   // Solution code here...
 };
+//
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -118,7 +118,18 @@ Here is an example of the input:
 ------------------------------------------------------------------------------------------------ */
 
 const sortByPrice = (arr) => {
+
   // Solution code here...
+  function callback(a,b){
+    if(a.price > b.price){
+      return 1;
+    } else if(b.price > a.price) {
+      return -1;
+    } else {
+      return 0;
+    }
+  }
+  return arr.sort(callback);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -131,6 +142,16 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 
 const sortNumbersByLength = (arr) => {
   // Solution code here...
+  function callback(a,b){
+    if(a.toString().length > b.toString().length){
+      return 1;
+    } else if(b.toString().length > a.toString().length) {
+      return -1;
+    } else {
+      return 0;
+    }
+  }
+  return arr.sort(callback);
 };
 
 /*-----------------------------------------------------------------------------------------------
@@ -153,8 +174,17 @@ const people = [
 
 const sortPeople = (arr) => {
   // Solution code here...
-};
-
+  function callback(a,b){
+    if(a.lastName > b.lastName){
+      return 1;
+    } else if(b.lastName > a.lastName) {
+      return -1;
+    } else {
+      return 0;
+    }
+  }
+  return arr.sort(callback);
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8
 
@@ -166,6 +196,20 @@ If two people have the same full name, the younger one should come first. Do not
 ------------------------------------------------------------------------------------------------ */
 
 const sortPeopleBetter = (arr) => {
+  function callback(a,b){
+    if(a.lastName > b.lastName){
+      return 1;
+    } else if(b.lastName > a.lastName) {
+      return -1;
+    } if(a.firstName > b.firstName){
+      return 1;
+    } else if(b.firstName > a.firstName) {
+      return -1;
+    } else {
+      return a.age - b.age;
+    }
+  }
+  return arr.sort(callback);
   // Solution code here...
 };
 
