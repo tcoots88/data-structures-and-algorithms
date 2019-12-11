@@ -174,6 +174,9 @@ describe('Testing challenge 5', () => {
     expect(totalCharacters(characters)).toStrictEqual(26);
   });
 });
+
+
+Notes: Need to add up 'name', 'spouse', and each index of 'children' .......even though the dragons aren't really characters, but whatever.
 ------------------------------------------------------------------------------------------------ */
 
 const totalCharacters = (arr) => {
