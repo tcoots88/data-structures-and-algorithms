@@ -10,7 +10,7 @@ Reverse the order of an inputed array
 cycle through the array and reverse the order of the index values
 ## Solution
 <!-- Embedded whiteboard image -->
-![](assets/20200106_172537.jpg)
+![](https://raw.githubusercontent.com/tcoots88/data-structures-and-algorithms/master/assets/20200106_172537.jpg)
 
 # Array shift
 <!-- Short summary or background information -->
