@@ -17,6 +17,7 @@ public class ArrayShift {
             } else {
                 outputArray[i] = inputArray[i-1];
             }
+        
         return Arrays.toString(outputArray);
     }
 }
