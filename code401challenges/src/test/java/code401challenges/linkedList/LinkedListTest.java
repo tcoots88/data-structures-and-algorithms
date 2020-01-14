@@ -9,6 +9,7 @@ public class LinkedListTest {
     @Test
     public void testEmptyList() {
         LinkedList newLinkedList = new LinkedList();
+
         assertNull("Empty List was not made successfully, RIP", newLinkedList.head);
     }
 
