@@ -46,7 +46,7 @@ public class LinkedList {
         String values = "";
 
         for(Node curr = head; curr != null; curr = curr.next) {
-            values = values + curr.data;
+            values = values + ", " + curr.data;
         }
 
         return values;
