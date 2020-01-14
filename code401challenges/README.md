@@ -26,6 +26,7 @@ cycle through the array and and insert the new value at the index equal to half 
 <!-- Embedded whiteboard image -->
 ![Whiteboard for Array Shift](https://raw.githubusercontent.com/tcoots88/data-structures-and-algorithms/master/assets/20200107_174333.jpg)
 
+
 # Singly Linked List
 <!-- Short summary or background information -->
 Create a Linked List that is empty upon instantiation
@@ -44,3 +45,4 @@ Begin with establishing the empty list and make a method that allows to add a va
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+
