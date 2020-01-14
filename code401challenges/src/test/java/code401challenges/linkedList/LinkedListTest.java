@@ -17,7 +17,7 @@ public class LinkedListTest {
         LinkedList newLinkedList = new LinkedList();
         newLinkedList.insert(15);
 
-        assertTrue("Linked List did not include target value", newLinkedList.includes(15));
+        assertTrue("Linked List did include target value", newLinkedList.includes(15));
     }
 
     @Test
