@@ -76,9 +76,9 @@ public class LinkedList {
         }
     }
 
-    public void append(int value) {
+    public void append(int val) {
         if (head == null) {
-            insert(value);
+            insert(val);
         } else {
             Node nodeToAppend = new Node();
             nodeToAppend.next = null;
@@ -88,14 +88,11 @@ public class LinkedList {
                 next = next.next;
             }
 
-          //  next.next = nodeToAppend;
-
-        for(Node curr = head; curr != null; curr = curr.next) {
-            values = values + ", " + curr.data;
+            next.next = nodeToAppend;
         }
     }
 
-    public void insertAfter(int previousVal, int newValue) {
+    public void insertAfter(int previousVal,int newValue) {
 
         Node currentNode = head;
         while(currentNode.next != null) {
@@ -105,6 +102,23 @@ public class LinkedList {
             currentNode = currentNode.next;
         }
     }
+
+    public int kthFromEnd(int k) {
+        int counter = 0;
+        Node current = this.head;
+        while (current != null){
+            counter++;
+            current = current.next;
+        }
+        if(k > counter){
+            throw new NullPointerException("Inputted value is too large");
+        }
+        for(int i = 1; i < (counter - k); i++){
+            this.head = this.head.next;
+        }
+        return this.head.data;
+    }
+
 
 
 
