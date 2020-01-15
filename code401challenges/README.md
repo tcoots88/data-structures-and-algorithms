@@ -26,6 +26,26 @@ cycle through the array and and insert the new value at the index equal to half 
 <!-- Embedded whiteboard image -->
 ![Whiteboard for Array Shift](https://raw.githubusercontent.com/tcoots88/data-structures-and-algorithms/master/assets/20200107_174333.jpg)
 
+
+# Singly Linked List
+<!-- Short summary or background information -->
+Create a Linked List that is empty upon instantiation
+
+## Challenge
+<!-- Description of the challenge -->
+
+- Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
+- Define a method called includes which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+- Define a method called toString (or __str__ in Python) which takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
+  - "{ a } -> { b } -> { c } -> NULL"
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Begin with establishing the empty list and make a method that allows to add a value.  Establish an additional method to check to see if a value is already in the list. 
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
+
 # Binary Search
 <!-- Short summary or background information -->
 A function that  takes in 2 parameters: a sorted array and the search key. Returns the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
