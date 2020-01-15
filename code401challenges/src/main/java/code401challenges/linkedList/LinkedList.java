@@ -88,7 +88,10 @@ public class LinkedList {
                 next = next.next;
             }
 
-            next.next = nodeToAppend;
+          //  next.next = nodeToAppend;
+
+        for(Node curr = head; curr != null; curr = curr.next) {
+            values = values + ", " + curr.data;
         }
     }
 

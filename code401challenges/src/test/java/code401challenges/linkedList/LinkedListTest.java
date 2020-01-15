@@ -22,7 +22,10 @@ public class LinkedListTest {
         LinkedList newLinkedList = new LinkedList();
         newLinkedList.insertBefore(15);
 
-        assertTrue("Linked List did include target value", newLinkedList.includes(15));    }
+
+        assertTrue("Linked List did include target value", newLinkedList.includes(15));
+    }
+
 
     @Test
     public void testIncludesMethodFalse() {
@@ -44,6 +47,7 @@ public class LinkedListTest {
 
 
     }
+
 
     @Test
     public void testAddToEndOfLinkedList() {
@@ -74,3 +78,4 @@ public class LinkedListTest {
 
 
 }
+
