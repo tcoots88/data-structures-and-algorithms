@@ -26,3 +26,19 @@ cycle through the array and and insert the new value at the index equal to half 
 <!-- Embedded whiteboard image -->
 ![Whiteboard for Array Shift](https://raw.githubusercontent.com/tcoots88/data-structures-and-algorithms/master/assets/20200107_174333.jpg)
 
+# Binary Search
+<!-- Short summary or background information -->
+A function that  takes in 2 parameters: a sorted array and the search key. Returns the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+
+## Challenge Description
+A function that  takes in 2 parameters: a sorted array and the search key. Returns the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Determine the mid point by first declaring the the start and end of an array.  Depending on whether the search key is less than, equal to, or greater than the mid point will determine the result.  If nothing is found, return -1. 
+
+## Solution
+<!-- Embedded whiteboard image -->
+![Whiteboard for Binary Search](https://raw.githubusercontent.com/tcoots88/data-structures-and-algorithms/master/assets/20200108_172151.jpg)
+![Whiteboard for Binary Search2](https://raw.githubusercontent.com/tcoots88/data-structures-and-algorithms/master/assets/20200108_172155.jpg)
+
