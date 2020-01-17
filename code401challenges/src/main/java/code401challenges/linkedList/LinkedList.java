@@ -119,9 +119,26 @@ public class LinkedList {
         return this.head.data;
     }
 
+    public static LinkedList mergeLists(LinkedList list1, LinkedList list2) {
+        if (list1.head == null)
+            return list2;
+        else if (list2.head == null)
+            return list1;
 
 
+        Node next1 = list1.head;
+        Node next2 = list2.head;
+        Node temp = next1.next;
 
+        while (next1 != null) {
+            next1.next = next2;
+            next1 = temp;
+            next2 = next2.next;
+        }
+        next1 = next2.next;
 
+        return list1;
+
+    }
 
 }
