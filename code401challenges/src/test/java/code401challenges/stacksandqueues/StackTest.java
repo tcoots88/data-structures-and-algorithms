@@ -3,7 +3,7 @@ package code401challenges.stacksandqueues;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class StacksAndQueuesTest {
+public class StackTest {
 
     @Test
     public void testNewStackWithTopNull(){

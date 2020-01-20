@@ -64,3 +64,15 @@ Determine the mid point by first declaring the the start and end of an array.  D
 ![Whiteboard for Binary Search2](https://raw.githubusercontent.com/tcoots88/data-structures-and-algorithms/master/assets/20200108_172155.jpg)
 
 
+# Stacks and Queues
+<!-- Short summary or background information -->
+Create a stack class that has a top property and uses methods push, pop, peek, and isEmpty. Similary,
+create a queue class that has a front and back property and uses methods
+enqueue, dequeue, peek, and isEmpty. 
+## Challenge
+<!-- Description of the challenge -->
+Both classes should have O(1) Time performance.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Stack should use Last in First Out (LIFO) and queue should use First in 
+Last Out (FILO)

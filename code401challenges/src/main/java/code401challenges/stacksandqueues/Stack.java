@@ -21,8 +21,6 @@ public class Stack {
         if (top == null) {
             throw new NullPointerException("Failed to pop due to null value for top");
         }
-
-
         Node temp = top;
         top = top.next;
         return temp.value;
