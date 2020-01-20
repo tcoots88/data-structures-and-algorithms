@@ -64,6 +64,22 @@ Determine the mid point by first declaring the the start and end of an array.  D
 ![Whiteboard for Binary Search2](https://raw.githubusercontent.com/tcoots88/data-structures-and-algorithms/master/assets/20200108_172155.jpg)
 
 
+# Challenge Summary
+<!-- Short summary or background information -->
+
+
+## Challenge Description
+<!-- Description of the challenge -->
+A function called mergeLists which takes two linked lists as arguments. The two linked lists zip together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. 
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Traverse each linked list. Point the next node of current node in list1 to next node in list2
+## Solution
+<!-- Embedded whiteboard image -->
+![Whiteboard for mergeLists](whiteboard.jpg)
+
+
+
 # Stacks and Queues
 <!-- Short summary or background information -->
 Create a stack class that has a top property and uses methods push, pop, peek, and isEmpty. Similary,
@@ -76,3 +92,4 @@ Both classes should have O(1) Time performance.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Stack should use Last in First Out (LIFO) and queue should use First in 
 Last Out (FILO)
+
