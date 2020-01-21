@@ -65,15 +65,53 @@ public class LinkedListTest {
 
     @Test public void testLinkedList_DeleteAfterIntoList() {
         LinkedList testList = new LinkedList();
-        testList.insert(4);
-        testList.insert(5);
-        testList.insert(9);
-        testList.insert(8);
-        testList.insert(22);
-        testList.insertAfter(8, 29);
-        assertEquals("{ 22 } -> { 8 } -> { 29 } -> { 9 } -> { 5 } -> { 4 } -> { NULL }", testList.toString());
-        testList.delete(4);
-        assertEquals("{ 22 } -> { 8 } -> { 29 } -> { 9 } -> { 5 } -> { NULL }", testList.toString());
+        testList.insertBefore(1);
+        testList.insertBefore(2);
+        testList.insertBefore(3);
+        testList.insertBefore(4);
+        testList.insertBefore(0);
+        testList.insertAfter(4, 0);
+        assertEquals("{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 0 } -> { NULL }", testList.toString());
+        testList.delete(1);
+        assertEquals("{ 2 } -> { 3 } -> { 4 } -> { 0 } -> { NULL }", testList.toString());
+    }
+
+
+    @Test
+    public void testLinkedList_0thFromTheLastMethod() {
+        LinkedList testList = new LinkedList();
+        testList.insertBefore(5);
+        testList.insertBefore(3);
+        testList.insertBefore(9);
+        testList.insertBefore(5);
+
+        assertEquals("{ 5 } -> { 3 } -> { 9 } -> { 5 } -> { NULL }", testList.toString());
+        assertEquals("The 0 value did not return 5", 5, testList.kthFromEnd(0));
+
+    }
+
+
+    @Test
+    public void testMerge2EmptyLists() {
+        LinkedList list1 = new LinkedList();
+        LinkedList list2 = new LinkedList();
+        assertNull("Should return empty list", LinkedList.mergeLists(list1, list2).head);
+    }
+
+    @Test
+    public void testMergeList1Empty() {
+        LinkedList list1 = new LinkedList();
+        LinkedList list2 = new LinkedList();
+        list2.head = new Node();
+        assertEquals("Should return list2", list2, LinkedList.mergeLists(list1, list2));
+    }
+
+    @Test
+    public void testMergeList2Empty() {
+        LinkedList list1 = new LinkedList();
+        LinkedList list2 = new LinkedList();
+        list1.head = new Node();
+        assertEquals("Should return list1", list1, LinkedList.mergeLists(list1, list2));
     }
 
 
