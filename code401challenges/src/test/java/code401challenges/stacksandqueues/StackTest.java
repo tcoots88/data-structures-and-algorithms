@@ -93,6 +93,8 @@ public class StackTest {
     public void testIsEmptyOnEmptyStack(){
         Stack testNewStack = new Stack();
         assertEquals("isEmpty should return true for this empty stack",true, testNewStack.isEmpty());
+        System.out.println("top value is " + testNewStack.top);
+
     }
 
     @Test
