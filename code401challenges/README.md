@@ -76,3 +76,15 @@ Both classes should have O(1) Time performance.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Stack should use Last in First Out (LIFO) and queue should use First in 
 Last Out (FILO)
+
+# PseudoQueue
+<!-- Short summary or background information -->
+Create a brand new PseudoQueue class. This will mimic the queue functionality using two stacks
+## Challenge Description
+<!-- Description of the challenge -->
+Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Not really sure if I did correctly. I seem to be only utilizing one stack...
+
+
