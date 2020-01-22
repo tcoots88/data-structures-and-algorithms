@@ -14,6 +14,9 @@ public class PseudoQueue {
     public void enqueue(int value) {
         while(stackOne.top != null){
             stackTwo.push(stackOne.pop());
+            System.out.println("stackOne.top.value = " + stackOne.top.value);
+            System.out.println("stackTwo.top.value = " + stackTwo.top.value);
+
         }
         stackOne.push(value);
 
