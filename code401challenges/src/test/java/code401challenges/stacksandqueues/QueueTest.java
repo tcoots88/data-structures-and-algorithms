@@ -102,7 +102,7 @@ public class QueueTest {
     public void testIsEmptyOnEmptyQueue(){
         Queue testQueue = new Queue();
         assertEquals("isEmpty should return true for this empty queue",true, testQueue.isEmpty());
-        System.out.println("Front value is " + testQueue.front.value);
+        System.out.println("Front value is " + testQueue.front);
         System.out.println("Party on, Garth");
     }
 
