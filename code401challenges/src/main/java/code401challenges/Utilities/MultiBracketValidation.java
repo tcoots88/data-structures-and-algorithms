@@ -1,4 +1,4 @@
-package code401challenges.utilities;
+package code401challenges.Utilities;
 
 
 import java.util.HashMap;

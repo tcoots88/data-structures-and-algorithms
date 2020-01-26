@@ -1,9 +1,9 @@
-package code401challenges.utilities;
+package code401challenges.Utilities;
 
-import code401challenges.stacksandqueues.Queue;
 
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.Queue;
+
+
 public class AnimalShelter {
 
     Queue catQueue;
@@ -12,9 +12,9 @@ public class AnimalShelter {
 
     public void enqueue(Animal animal) {
         if (animal.getClass().getName().endsWith("Cat")) {
-            catQueue.enqueue((Cat) animal);
+            catQueue.add((Cat) animal);
         } else if (animal.getClass().getName().endsWith("Dog")) {
-            dogQueue.enqueue((Dog) animal);
+            dogQueue.add((Dog) animal);
         } else throw new IllegalArgumentException("Not a dog or cat");
     }
 
@@ -22,9 +22,9 @@ public class AnimalShelter {
         if(catOrDog.toUpperCase() != "DOG" && catOrDog.toUpperCase() != "CAT")
             return null;
         else if (catOrDog.toUpperCase().equals("DOG")){
-            return dogQueue.dequeue();
+            return (Animal) dogQueue.remove();
         } else {
-            return catQueue.dequeue();
+            return (Animal) catQueue.remove();
         }
     }
 }
