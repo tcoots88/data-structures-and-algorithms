@@ -102,5 +102,29 @@ Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, thi
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Not really sure if I did correctly. I seem to be only utilizing one stack...
+## Solution
+<!-- Embedded whiteboard image -->
+![Whiteboard for multiBracket](C:\Users\Coots\Desktop\Codefellows\data-structures-and-algorithms\code401challenges\resources\multiBracketWBPhoto.jpg)
 
+
+# Challenge Summary
+<!-- Short summary or background information -->
+Multi-bracket Validation.
+
+## Challenge Description
+<!-- Description of the challenge -->
+ Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+    Round Brackets : ()
+    Square Brackets : []
+    Curly Brackets : {}
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Create hashset and hash map for opening and closing brackets
+Traverse string(input) and if char is opening, pop char onto stack
+if char is closing bracket, check for corresponding opening on stack
+## Solution
+<!-- Embedded whiteboard image -->
+![Whiteboard for multiBracket](C:\Users\Coots\Desktop\Codefellows\data-structures-and-algorithms\code401challenges\resources\multiBracketWBPhoto.jpg)
 
