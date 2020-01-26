@@ -15,6 +15,8 @@ public class MultiBracketValidation {
         if(input.length() == 1)
             return false;
 
+        stack = new Stack<>();
+
         HashSet<Character> openingBrackets = new HashSet<>();
         openingBrackets.add('{');
         openingBrackets.add('[');
