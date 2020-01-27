@@ -128,3 +128,18 @@ if char is closing bracket, check for corresponding opening on stack
 <!-- Embedded whiteboard image -->
 ![Whiteboard for multiBracket](C:\Users\Coots\Desktop\Codefellows\data-structures-and-algorithms\code401challenges\resources\multiBracketWBPhoto.jpg)
 
+# Challenge Summary
+<!-- Short summary or background information -->
+Animal Shelter
+
+## Challenge Description
+<!-- Description of the challenge -->
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Created an animal class, an a dog class and cat class that both inherits from Animal.
+
+Created a Animal Shelter class that has 2 queues - a dog queue and a cat queue
+## Solution
+<!-- Embedded whiteboard image -->
+
