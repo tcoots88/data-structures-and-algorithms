@@ -1,7 +1,7 @@
 package code401challenges.tree;
 
 public class BinarySearchTree<Generic extends Comparable<Generic>> extends Tree<Generic> {
-    Node<Generic> root;
+    public Node<Generic> root;
 
 
     public BinarySearchTree(){

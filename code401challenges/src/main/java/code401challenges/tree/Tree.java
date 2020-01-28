@@ -3,7 +3,7 @@ package code401challenges.tree;
 import java.util.ArrayList;
 
 public class Tree<Generic extends Comparable<Generic>> {
-    Node<Generic> root;
+    public Node<Generic> root;
 
 
     public Tree(){
@@ -17,7 +17,7 @@ public class Tree<Generic extends Comparable<Generic>> {
         this.root = root;
     }
 
-    protected void setRoot(Generic data) {
+    public void setRoot(Generic data) {
         this.root = new Node<>(data);
     }
 

@@ -2,9 +2,9 @@ package code401challenges.tree;
 
 public class Node <Generic extends Comparable<Generic>> {
 
-    Generic data;
-    Node<Generic> left;
-    Node<Generic> right;
+    public Generic data;
+    public Node<Generic> left;
+    public Node<Generic> right;
 
     public Node (Generic data){
         this.data = data;

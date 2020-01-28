@@ -167,5 +167,22 @@ Created a Animal Shelter class that has 2 queues - a dog queue and a cat queue
    **contains** - uses recursion to search for value in the tree. On each iteration of recursion, checks the root to see if the value is less than or more than the target. If less than, search right of tree, else search right of the tree
 <br><br><br>
 
+# FizzBuzz Tree
+<!-- Short summary or background information -->
+Conduct “FizzBuzz” on a tree while traversing through it. Change the values of each of the nodes dependent on the current node’s value
+## Challenge Description
+<!-- Description of the challenge -->
+Create a fizzBuzzTree class that has a fizzbuzz method that takes in a tree. The method returns a tree with original values that are divisible by 15 with "FizzBuzz", original values that are divisible by 5 only with "Buzz", and original values that are divisible by 3 only with "Fizz"
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+fizzBuzz calls fizzBuzzMethodHelper to process the nodes.
+fizzBuzzMethodHelper traverses the tree recursively using preorder traversal 
+## Solution
+<!-- Embedded whiteboard image -->
+![Whiteboard for FizzBuzz](resources/FizzBuzzWB.jpg)
+
+
+
+
 
 
