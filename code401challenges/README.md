@@ -143,3 +143,29 @@ Created a Animal Shelter class that has 2 queues - a dog queue and a cat queue
 ## Solution
 <!-- Embedded whiteboard image -->
 
+# Trees
+<!-- Short summary or background information -->
+
+- Tree
+    - Create a class with 3 traversals - preorder, inorder and postorder, and return arrays with values for each function
+-   BinarySearchTree
+    - Create a Binary Search tree class with 2 methods - contains and add
+## Challenge
+<!-- Description of the challenge -->
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+   **preOrder** - process the root value first (add it's value to the array list), then process the left node, then process the right node
+   <br>
+   **inOrder** - process the left node value first (add it's value to the array list), then process the root node, then process the right node
+   <br>
+   **postOrder** - process the left value first (add it's value to the array list), then process the right node, then process the root node
+   <br>
+   **add** - checks the root to see if the value is less than or more than the target. If less than, add to left tree, else add to right of the tree
+   <br>
+   **contains** - uses recursion to search for value in the tree. On each iteration of recursion, checks the root to see if the value is less than or more than the target. If less than, search right of tree, else search right of the tree
+<br><br><br>
+
+
+

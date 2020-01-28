@@ -1,4 +1,4 @@
-package code401challenges.UtilitiesTest;
+package code401challenges.Utilities;
 
 import org.junit.Test;
 

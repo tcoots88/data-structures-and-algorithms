@@ -1,8 +1,5 @@
-package code401challenges.UtilitiesTest;
+package code401challenges.Utilities;
 
-import code401challenges.Utilities.Animal;
-import code401challenges.Utilities.AnimalShelter;
-import code401challenges.Utilities.Cat;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
