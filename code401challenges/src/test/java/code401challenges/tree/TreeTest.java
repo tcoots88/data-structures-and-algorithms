@@ -69,4 +69,15 @@ public class TreeTest {
         assertEquals(testArray, testTree.postOrder());
         System.out.println("testArray = " + testArray);
     }
+
+    @Test
+    public void testForBreadthFirst(){
+        Tree<Integer> testTree = new Tree<>(12);
+        testTree.root.setLeft(new Node<>(13));
+        testTree.root.getLeft().setLeft(new Node<>(18));
+        testTree.root.setRight(new Node<>(14));
+        testTree.root.getRight().setLeft(new Node<>(16));
+        testTree.root.getRight().setRight(new Node<>(17));
+        System.out.println("testTree.breadthFirst(testTree.root.getData()) = " + testTree.breadthFirst(testTree.root.getData()));;
+    }
 }
