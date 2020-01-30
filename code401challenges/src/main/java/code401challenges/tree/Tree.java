@@ -1,6 +1,9 @@
 package code401challenges.tree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringJoiner;
 
 public class Tree<Generic extends Comparable<Generic>> {
     public Node<Generic> root;
@@ -18,7 +21,7 @@ public class Tree<Generic extends Comparable<Generic>> {
     }
 
     public void setRoot(Generic data) {
-        this.root = new Node<>(data);
+        this.root = new Node<Generic>(data);
     }
 
 
@@ -72,5 +75,22 @@ public class Tree<Generic extends Comparable<Generic>> {
         postOrderBST.add(current.data);
 
         return postOrderBST;
+    }
+
+
+// breadth-first code challenge
+
+    public void breadthFirst(Node root) {
+        Queue<Node> queue = new LinkedList<Node>();
+        if (root == null)
+            return;
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            Node n = (Node) queue.remove();
+            if (n.left != null)
+                queue.add(n.left);
+            if (n.right != null)
+                queue.add(n.right);
+        }
     }
 }
