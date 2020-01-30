@@ -5,6 +5,7 @@ public class Node <Generic extends Comparable<Generic>> {
     public Generic data;
     public Node<Generic> left;
     public Node<Generic> right;
+    public Node<Generic> next;
 
     public Node (Generic data){
         this.data = data;

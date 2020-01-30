@@ -6,7 +6,7 @@ import java.util.Queue;
 import java.util.StringJoiner;
 
 public class Tree<Generic extends Comparable<Generic>> {
-    public Node<Generic> root;
+    public TreeNode<Integer> root;
 
 
     public Tree(){
@@ -80,17 +80,45 @@ public class Tree<Generic extends Comparable<Generic>> {
 
 // breadth-first code challenge
 
-    public void breadthFirst(Node root) {
-        Queue<Node> queue = new LinkedList<Node>();
+    public void breadthFirst(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
         if (root == null)
             return;
         queue.add(root);
         while (!queue.isEmpty()) {
-            Node n = (Node) queue.remove();
+            TreeNode n = (TreeNode) queue.remove();
+            System.out.println(n.data);
             if (n.left != null)
                 queue.add(n.left);
             if (n.right != null)
                 queue.add(n.right);
         }
     }
+
+// Max Value
+    public static int findMaximumValue(Tree<Integer> tree){
+        if(tree.root == null)
+            throw new NullPointerException("Empty Tree");
+
+        int maxValue = Integer.MIN_VALUE;
+        TreeQueue<TreeNode<Integer>> queue = new TreeQueue<>();
+
+
+        TreeNode<Integer> current = tree.root;
+        queue.enqueue(current);
+
+        while (queue.front != null){
+            current = queue.dequeue();
+            maxValue = Math.max(current.data, maxValue);
+
+            if (current.left !=null)
+                queue.enqueue(current.left);
+
+            if (current.right !=null)
+            queue.enqueue(current.right);
+        }
+        return maxValue;
+
+    }
+
 }
