@@ -103,6 +103,7 @@ public class Tree<Generic extends Comparable<Generic>> {
         int maxValue = Integer.MIN_VALUE;
         TreeQueue<TreeNode<Integer>> queue = new TreeQueue<>();
 
+
         TreeNode<Integer> current = tree.root;
         queue.enqueue(current);
 
@@ -117,7 +118,7 @@ public class Tree<Generic extends Comparable<Generic>> {
             queue.enqueue(current.right);
         }
         return maxValue;
-        
+
     }
 
 }

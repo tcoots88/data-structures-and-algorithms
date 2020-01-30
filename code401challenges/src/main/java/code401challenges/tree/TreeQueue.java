@@ -27,6 +27,7 @@ public class TreeQueue<Generic extends Comparable<Generic>> {
             throw new NullPointerException("empty list");
         }
 
+
         Generic result = front.data;
 
 

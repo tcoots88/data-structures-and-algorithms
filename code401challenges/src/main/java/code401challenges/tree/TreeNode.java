@@ -6,6 +6,7 @@ public class TreeNode<Generic extends Comparable<Generic>> implements Comparable
     TreeNode<Generic> left;
     TreeNode<Generic> right;
 
+
     public TreeNode(Generic data) {
         this.data = data;
         this.left = null;
