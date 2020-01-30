@@ -72,12 +72,27 @@ public class TreeTest {
 
     @Test
     public void testForBreadthFirst(){
+
+
         Tree<Integer> testTree = new Tree<>(12);
-        testTree.root.setLeft(new Node<>(13));
-        testTree.root.getLeft().setLeft(new Node<>(18));
-        testTree.root.setRight(new Node<>(14));
-        testTree.root.getRight().setLeft(new Node<>(16));
-        testTree.root.getRight().setRight(new Node<>(17));
-        System.out.println("testTree.breadthFirst(testTree.root.getData()) = " + testTree.breadthFirst(testTree.root.getData()));;
+        testTree.root.setLeft(new TreeNode<>(13));
+        testTree.root.getLeft().setLeft(new TreeNode<>(18));
+        testTree.root.setRight(new TreeNode<>(14));
+        testTree.root.getRight().setLeft(new TreeNode<>(16));
+        testTree.root.getRight().setRight(new TreeNode<>(17));
+        testTree.breadthFirst(testTree.root);
     }
+
+    @Test
+    public void testFindMaximumValueWithMultipleLeftAndRightNodes() {
+        Tree<Integer> tree = new Tree<>(12);
+        tree.root.setLeft(new TreeNode<>(13));
+        tree.root.getLeft().setLeft(new TreeNode<>(18));
+        tree.root.setRight(new TreeNode<>(14));
+        tree.root.getRight().setLeft(new TreeNode<>(16));
+        tree.root.getRight().setRight(new TreeNode<>(17));
+        assertEquals("Should be 18", 18, (int) Tree.findMaximumValue(tree));
+    }
+
+
 }

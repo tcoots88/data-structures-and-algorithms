@@ -181,6 +181,24 @@ fizzBuzzMethodHelper traverses the tree recursively using preorder traversal
 <!-- Embedded whiteboard image -->
 ![Whiteboard for FizzBuzz](resources/FizzBuzzWB.jpg)
 
+# Find Max Value
+<!-- Short summary or background information -->
+Create a findMaximum method that which takes a Binary Tree as its unique input and returns the maximum value stored in the tree.
+## Challenge Description
+<!-- Description of the challenge -->
+Create a fizzBuzzTree class that has a fizzbuzz method that takes in a tree. The method returns a tree with original values that are divisible by 15 with "FizzBuzz", original values that are divisible by 5 only with "Buzz", and original values that are divisible by 3 only with "Fizz"
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Time O(n); Space O(n); Use a helper function that takes in the tree's root value and does all the heavy lifting.
+
+    create a variable that stores the maximum
+    using inOrder traversal, check each node to see if it is bigger than the maximum. If so, replace the maximum value with that node's value
+    return the maximum value
+## Solution
+<!-- Embedded whiteboard image -->
+
+
+
 
 
 
