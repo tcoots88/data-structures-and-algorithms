@@ -117,6 +117,7 @@ public class Tree<Generic extends Comparable<Generic>> {
             queue.enqueue(current.right);
         }
         return maxValue;
+        
     }
 
 }
