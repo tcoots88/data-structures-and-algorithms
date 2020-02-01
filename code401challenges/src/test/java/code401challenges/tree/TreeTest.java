@@ -83,7 +83,7 @@ public class TreeTest {
         testTree.breadthFirst(testTree.root);
     }
 
-    
+
     @Test
     public void testFindMaximumValueWithMultipleLeftAndRightNodes() {
         Tree<Integer> tree = new Tree<>(12);
