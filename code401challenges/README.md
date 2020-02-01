@@ -76,7 +76,7 @@ A function called mergeLists which takes two linked lists as arguments. The two 
 Traverse each linked list. Point the next node of current node in list1 to next node in list2
 ## Solution
 <!-- Embedded whiteboard image -->
-![Whiteboard for mergeLists](whiteboard.jpg)
+![Whiteboard for mergeLists](src/main/resources/whiteboard.jpg)
 
 
 
@@ -179,7 +179,7 @@ fizzBuzz calls fizzBuzzMethodHelper to process the nodes.
 fizzBuzzMethodHelper traverses the tree recursively using preorder traversal 
 ## Solution
 <!-- Embedded whiteboard image -->
-![Whiteboard for FizzBuzz](resources/FizzBuzzWB.jpg)
+![Whiteboard for FizzBuzz](src/main/resources/FizzBuzzWB.jpg)
 
 # Find Max Value
 <!-- Short summary or background information -->
@@ -196,6 +196,7 @@ Time O(n); Space O(n); Use a helper function that takes in the tree's root value
     return the maximum value
 ## Solution
 <!-- Embedded whiteboard image -->
+![Whiteboard for MaxValue](src/main/resources/maxValWB.jpg)
 
 
 
