@@ -199,6 +199,22 @@ Time O(n); Space O(n); Use a helper function that takes in the tree's root value
 ![Whiteboard for MaxValue](src/main/resources/maxValWB.jpg)
 
 
+# Breadth First Traversal
+<!-- Short summary or background information -->
+Create a breadth first traversal method that which takes a Binary Tree as its unique input and prints the nodes visited
+## Challenge Description
+<!-- Description of the challenge -->
+Use a helper function that takes in the tree's root value and does all the heavy lifting
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Continuously add nodes to the queue until no further nodes are left to be added. When the node is about to be dequeued, add the children to the queue. Add the value to a string that will be returned after all the nodes in the tree are visited.
+## Solution
+<!-- Embedded whiteboard image -->
+![Whiteboard for MaxValue](src/main/resources/BreadthFirstWhiteboard.jpg)
+
+
+
+
 
 
 
