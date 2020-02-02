@@ -142,6 +142,7 @@ Created an animal class, an a dog class and cat class that both inherits from An
 Created a Animal Shelter class that has 2 queues - a dog queue and a cat queue
 ## Solution
 <!-- Embedded whiteboard image -->
+![Whiteboard for AnimalShelter](src/main/resources/shelterQueue.jpg)
 
 # Trees
 <!-- Short summary or background information -->

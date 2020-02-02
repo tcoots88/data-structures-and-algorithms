@@ -21,4 +21,13 @@ public class AnimalShelterTest {
         animalShelter.enqueue(testCat);
         assertEquals("test", testCat);
     }
+
+    @Test
+    public void testEnqueueDog(){
+        AnimalShelter animalShelter = new AnimalShelter();
+        Dog testDog = new Dog("DogFace", "black");
+        animalShelter.enqueue(testDog);
+        assertEquals("test", testDog);
+
+    }
 }
