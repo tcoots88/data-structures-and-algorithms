@@ -49,7 +49,7 @@ public class HashtableTest {
 
     @Test
     public void testByExistentKey() {
-        assertFalse(hashtableTest.contains("8"));
+        assertTrue(hashtableTest.contains("Frodo"));
     }
 
 

@@ -17,11 +17,12 @@ public class Hashtable {
         int hashValue = 0;
         char[] letters = key.toCharArray();
 
-        for( int i = 0; i<letters.length; i++) {
+        for( int i = 0; i < letters.length; i++) {
             hashValue += letters[i];
         }
 
         hashValue = ( hashValue * 769 ) % map.length;
+        System.out.println("hashValue = " + hashValue);
         return hashValue;
     }
 
@@ -56,12 +57,12 @@ public class Hashtable {
         if (node == null) return null;
         //if the keys are the same, return value.
         if ( node.getKey().equals(key) ){
-//            System.out.println("Correct Node Value at: " + node.getValue() );
+            System.out.println("Correct Node Value at: " + node.getValue() );
             return node.getValue();
         }
         //recurse
         else {
-//            System.out.println("Incorrect Node Value at: " + node.getValue() );
+            System.out.println("Incorrect Node Value at: " + node.getValue() );
             return hashHelperMethod(key, node.getNext());
         }
     }
