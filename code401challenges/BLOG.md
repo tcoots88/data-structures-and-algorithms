@@ -80,6 +80,50 @@ Divides input array in two halves, calls itself for the two halves and then merg
 
 https://www.geeksforgeeks.org/merge-sort/
 
+# Quick Sort
+
+## Problem Domain
+
+Quicksort is an algorithm used to quickly sort items within an array no matter how big the array is. It is quite scalable and works relatively well for small and large data sets, and is easy to implement with little time complexity. It does this through a divide-and-conquer method that divides a single large array into two smaller ones and then repeats this process for all created arrays until the sort is complete. This code specifically targets the last value in the array and partitions based on its value.
+
+## Pseudocode
+
+    ALGORITHM QuickSort(arr, left, right)
+        if left < right
+            // Partition the array by setting the position of the pivot value 
+            DEFINE position <-- Partition(arr, left, right)
+            // Sort the left
+            QuickSort(arr, left, position - 1)
+            // Sort the right
+            QuickSort(arr, position + 1, right)
+    
+    ALGORITHM Partition(arr, left, right)
+        // set a pivot value as a point of reference
+        DEFINE pivot <-- arr[right]
+        // create a variable to track the largest index of numbers lower than the defined pivot
+        DEFINE low <-- left - 1
+        for i <- left to right do
+            if arr[i] <= pivot
+                low++
+                Swap(arr, i, low)
+    
+         // place the value of the pivot location in the middle.
+         // all numbers smaller than the pivot are on the left, larger on the right. 
+         Swap(arr, right, low + 1)
+        // return the pivot index point
+         return low + 1
+    
+    ALGORITHM Swap(arr, i, low)
+        DEFINE temp;
+        temp <-- arr[i]
+        arr[i] <-- arr[low]
+        arr[low] <-- temp
+
+## Examples
+
+![Whiteboard for mergeLists](src/main/resources/QuickSort.png)
+
+
 
 
 
