@@ -233,6 +233,19 @@ Write a function that accepts a lengthy string parameter.
 <!-- Embedded whiteboard image -->
 TODO: will do whiteboard when returning to class
 
+# Challenge Summary
+<!-- Short summary or background information -->
+Find common values in 2 binary trees.
+## Challenge Description
+<!-- Description of the challenge -->
+Return a set of values found in both trees
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+    - Using iterative inorder traversal and two auxiliary stacks for the two trees, find the common nodes in each tree. 
+
+## Solution
+<!-- Embedded whiteboard image -->
+
 
 
 
