@@ -192,9 +192,10 @@ Create a fizzBuzzTree class that has a fizzbuzz method that takes in a tree. The
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Time O(n); Space O(n); Use a helper function that takes in the tree's root value and does all the heavy lifting.
 
-    create a variable that stores the maximum
-    using inOrder traversal, check each node to see if it is bigger than the maximum. If so, replace the maximum value with that node's value
-    return the maximum value
+    - create a variable that stores the maximum
+    - using inOrder traversal, check each node to see if it is bigger than the maximum. 
+    - If so, replace the maximum value with that node's value
+    - return the maximum value
 ## Solution
 <!-- Embedded whiteboard image -->
 ![Whiteboard for MaxValue](src/main/resources/maxValWB.jpg)
@@ -212,6 +213,26 @@ Continuously add nodes to the queue until no further nodes are left to be added.
 ## Solution
 <!-- Embedded whiteboard image -->
 ![Whiteboard for MaxValue](src/main/resources/BreadthFirstWhiteboard.jpg)
+
+
+
+# Challenge Summary
+<!-- Short summary or background information -->
+Find the first repeated word in a string of text.
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function that accepts a lengthy string parameter.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+    - Use existing hash table implementation to achieve solution
+    - before adding the node into the hash table, first check if it already exists
+    - if it exists, return repeated word
+    - if all words can be added, return a no repeats string.
+
+## Solution
+<!-- Embedded whiteboard image -->
+TODO: will do whiteboard when returning to class
+
 
 
 
