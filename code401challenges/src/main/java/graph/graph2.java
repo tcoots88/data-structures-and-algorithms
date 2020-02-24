@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+// also took information from https://www.geeksforgeeks.org/graph-and-its-representations/
 public class graph2 {
     HashMap<Vertex, ArrayList<Edge>> adjacencyList = new HashMap<>();
     private int size = 0;
