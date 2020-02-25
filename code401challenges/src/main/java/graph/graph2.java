@@ -2,16 +2,17 @@ package graph;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 // also took information from https://www.geeksforgeeks.org/graph-and-its-representations/
 public class graph2 {
-    HashMap<Vertex, ArrayList<Edge>> adjacencyList = new HashMap<>();
+    LinkedHashMap<Vertex, ArrayList<Edge>> adjacencyList = new LinkedHashMap<>();
     private int size = 0;
 
 
     public graph2(){
-        adjacencyList = new HashMap<Vertex, ArrayList<Edge>>();
+        adjacencyList = new LinkedHashMap<Vertex, ArrayList<Edge>>();
     }
 
     public Vertex addNode(Vertex newVertex){
@@ -25,11 +26,9 @@ public class graph2 {
 
     public String addEdge(Vertex vertexOne, Vertex vertexTwo, int weight) {
 //        Adds a new edge between two nodes in the graph
-//        Include the ability to have a “weight”
 //        Takes in the two nodes to be connected by the edge
 //              - Both nodes should already be in the Graph
         addTwoEdges(vertexOne, vertexTwo, weight);
-        addTwoEdges(vertexTwo, vertexOne, weight);
         return "Vertices added";
     }
 

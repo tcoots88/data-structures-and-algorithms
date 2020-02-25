@@ -9,10 +9,13 @@ public class graph2Test {
 
     graph2 graphTest = new graph2();
 
-    Vertex vertexTester1 = new Vertex(1);
-    Vertex vertexTester2 = new Vertex(2);
-    Vertex vertexTester3 = new Vertex(3);
-    Vertex vertexTester4 = new Vertex(4);
+    Vertex vertexTester1 = new Vertex('A');
+    Vertex vertexTester2 = new Vertex('B');
+    Vertex vertexTester3 = new Vertex('C');
+    Vertex vertexTester4 = new Vertex('D');
+    Vertex vertexTester5 = new Vertex('E');
+    Vertex vertexTester6 = new Vertex('F');
+
 
     @Before
     public void init() {
@@ -20,14 +23,22 @@ public class graph2Test {
         graphTest.addNode(vertexTester2);
         graphTest.addNode(vertexTester3);
         graphTest.addNode(vertexTester4);
+        graphTest.addNode(vertexTester5);
+        graphTest.addNode(vertexTester6);
+
+        graphTest.addEdge(vertexTester1, vertexTester2, 2);
+        graphTest.addEdge(vertexTester1, vertexTester3, 5);
+        graphTest.addEdge(vertexTester1, vertexTester4, 6);
+        graphTest.addEdge(vertexTester3, vertexTester5, 1);
+        graphTest.addEdge(vertexTester3, vertexTester6, 2);
     }
 
     @Test
     public void testForAddNodeAndGetNodes(){
-        Vertex vertexTester5 = new Vertex(5);
-        graphTest.addNode(vertexTester5);
+        Vertex vertexTester7 = new Vertex(7);
+        graphTest.addNode(vertexTester7);
         assertTrue("The graph should contain the vertex that has been added",
-                graphTest.getNodes().contains(vertexTester5));
+                graphTest.getNodes().contains(vertexTester7));
     }
 
     @Test
@@ -44,7 +55,7 @@ public class graph2Test {
     @Test
     public void getSizeTest() {
         assertEquals("The method should return the size of the graph (number of nodes)",
-                4, graphTest.size());
+                6, graphTest.size());
     }
 
     @Test
@@ -54,6 +65,30 @@ public class graph2Test {
                 9, graphTest.size());
     }
 
+
+    @Test
+    public void testForBFS(){
+        BreadthFirst bfsTester = new BreadthFirst();
+
+        assertEquals("should return a bfs-based output", "A B C D E F ",
+                bfsTester.stringBuilder(bfsTester.runBreadthFirst(graphTest, vertexTester1)));
+        assertEquals("should return a bfs-based output", "C E F ",
+                bfsTester.stringBuilder(bfsTester.runBreadthFirst(graphTest,
+                        vertexTester3)));
+        assertEquals("should return a bfs-based output", "B ",
+                bfsTester.stringBuilder(bfsTester.runBreadthFirst(graphTest,
+                        vertexTester2)));
+        assertEquals("should return a bfs-based output", "D ",
+                bfsTester.stringBuilder(bfsTester.runBreadthFirst(graphTest,
+                        vertexTester4)));
+        assertEquals("should return a bfs-based output", "E ",
+                bfsTester.stringBuilder(bfsTester.runBreadthFirst(graphTest,
+                        vertexTester5)));
+        assertEquals("should return a bfs-based output", "F ",
+                bfsTester.stringBuilder(bfsTester.runBreadthFirst(graphTest,
+                        vertexTester6)));
+
+    }
 
 
 
