@@ -298,3 +298,27 @@ Size()
 
 
 
+
+# Challenge Summary
+<!-- Short summary or background information -->
+Breadth First Search on Graph 
+## Challenge Description
+<!-- Description of the challenge -->
+Given a graph, use BFS to obtain the array of values in the graph.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->   
+
+    Adopted the neighbors method
+    Collect neighbors from the starting node, and put them in queue
+    Iterate through the queue and retrieve neighbors and add them in the queue
+    Dequeue and add into the arraylist
+    Repeat the process until all the values are obtained
+    
+    
+   
+    Time complexity and space complexity is O(N) since all the nodes are visited.
+
+
+## Solution
+<!-- Embedded whiteboard image -->
