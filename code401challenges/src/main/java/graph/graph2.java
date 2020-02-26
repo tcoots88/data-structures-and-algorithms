@@ -29,6 +29,8 @@ public class graph2 {
 //        Takes in the two nodes to be connected by the edge
 //              - Both nodes should already be in the Graph
         addTwoEdges(vertexOne, vertexTwo, weight);
+        addTwoEdges(vertexTwo, vertexOne, weight);
+
         return "Vertices added";
     }
 
