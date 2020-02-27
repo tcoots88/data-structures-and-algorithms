@@ -34,6 +34,15 @@ public class graph2 {
         return "Vertices added";
     }
 
+    public String addEdgeDFS(Vertex vertexOne, Vertex vertexTwo, int weight) {
+//        Adds a new edge between two nodes in the graph
+//        Takes in the two nodes to be connected by the edge
+//              - Both nodes should already be in the Graph
+        addTwoEdges(vertexOne, vertexTwo, weight);
+
+        return "Vertices added";
+    }
+
     private void addTwoEdges(Vertex vertexOne, Vertex vertexTwo, int weight) {
         ArrayList<Edge> arrayListOfEdges = adjacencyList.get(vertexOne);
         arrayListOfEdges.add(new Edge(weight, vertexTwo));

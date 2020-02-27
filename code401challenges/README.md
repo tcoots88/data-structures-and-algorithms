@@ -333,3 +333,35 @@ Given a business trip itinerary, and an Alaska Airlines route map, is the trip p
 
 ## Solution
 ![Whiteboard for GetEdge](src/main/resources/getEdgeWB.jpg)
+
+
+
+
+# Challenge Summary
+<!-- Short summary or background information -->
+Implement DFS on a graph.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Given a graph, and the vertex to start from, implement Depth-First-Search on that graph.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->   
+
+
+    Created arraylist of vertices to hold the return value, arraylist of edges to hold all neighbors, HashMap to track the visit status of the vertex and Stack to hold working vertex.
+    Immediately add the first provided vertex to the stack, update the visit status.
+    Add the newly popped vertex into the return arrayList that holds the vertices.
+    Get the neighbors and check if they have been visited, if not push them into stack.
+    Repeat until stack is empty.
+    Return the arraylist that holds the vertices.
+    Space is O(N)
+    Time is O(N) since we might be visiting all the nodes.
+
+
+
+## Solution
+<!-- Embedded whiteboard image -->
+![Whiteboard for DFS](src/main/resources/DFSgraph.jpg)
+
+
